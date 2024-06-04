@@ -2,18 +2,7 @@
 
 ### Ejercicio 1
 
-Dado un arreglo de números enteros, diseña un algoritmo que encuentre el "k-ésimo" elemento más pequeño del arreglo. Es decir, encuentra el elemento que ocuparía la posición k si el arreglo estuviera ordenado de manera ascendente utilizando el algoritmo QuickSort.
-
-Pasos para resolver el ejercicio:
-
-1. Define una función llamada "EncontrarKesimo" que tome como parámetros el arreglo de números enteros y el valor k.
-2. Implementa una lógica similar al particionamiento del algoritmo QuickSort para encontrar el elemento "k-ésimo" en el arreglo.
-    1. Seleccione un pivote aleatorio del arreglo.
-    2. Realice el particionamiento del arreglo en base al pivote, de manera que todos los elementos menores que el pivote estén a su izquierda y los mayores estén a su derecha.
-    3. Verifique en qué posición quedó el pivote después del particionamiento.
-    4. Si la posición del pivote es igual a k, significa que hemos encontrado el elemento "k-ésimo" y lo retornamos.
-    5. Si la posición del pivote es mayor a k, aplicamos el mismo proceso recursivamente en la sublista izquierda del pivote.
-    6. Si la posición del pivote es menor a k, aplicamos el mismo proceso recursivamente en la sublista derecha del pivote.
+Implementar quicksort pero con el pivote elegido aleatoriamente. Comparar eficiencia con el dado en clase para un ejemplo con 500 elementos.
 
 ### Ejercicio 2
 
