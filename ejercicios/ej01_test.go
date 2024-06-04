@@ -6,23 +6,9 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestMedio(t *testing.T) {
+func TestThreeWayMergeSort(t *testing.T) {
 	array := []int{5, 9, 2, 8, 1, 7, 4, 3, 10, 6}
-	expected := 6
-	kesimo := EncontrarKesimo(array, 5)
-	assert.Equal(t, expected, kesimo)
-}
-
-func TestPrimero(t *testing.T) {
-	array := []int{5, 9, 2, 8, 1, 7, 4, 3, 10, 6}
-	expected := 1
-	kesimo := EncontrarKesimo(array, 0)
-	assert.Equal(t, expected, kesimo)
-}
-
-func TestUltimo(t *testing.T) {
-	array := []int{5, 9, 2, 8, 1, 7, 4, 3, 10, 6}
-	expected := 10
-	kesimo := EncontrarKesimo(array, 9)
-	assert.Equal(t, expected, kesimo)
+	expected := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	sorted := ThreeWayMergeSort(array)
+	assert.Equal(t, expected, sorted)
 }
